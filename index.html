@@ -360,7 +360,7 @@
         document,
         "script",
         "//www.google-analytics.com/analytics.js",
-        "ga"
+        "ga",
       );
       ga("create", "UA-19842770-1", "auto");
       ga("send", "pageview");
@@ -478,7 +478,10 @@
               <a
                 xml:lang="es"
                 lang="es"
-                onclick="Liferay.Util.forcePost(this); return false;"
+                onclick="
+                  Liferay.Util.forcePost(this);
+                  return false;
+                "
                 href="https://www.inap.es/en/cuerpo-de-gestion-de-la-administracion-civil-del-estado?p_p_id=82&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=columna-1&amp;_82_struts_action=%2Flanguage%2Fview&amp;_82_redirect=%2Fen%2Fcuerpo-de-gestion-de-la-administracion-civil-del-estado&amp;_82_languageId=es_ES"
                 >Bienvenidos</a
               >
@@ -487,7 +490,10 @@
               <a
                 xml:lang="ca"
                 lang="ca"
-                onclick="Liferay.Util.forcePost(this); return false;"
+                onclick="
+                  Liferay.Util.forcePost(this);
+                  return false;
+                "
                 href="https://www.inap.es/en/cuerpo-de-gestion-de-la-administracion-civil-del-estado?p_p_id=82&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=columna-1&amp;_82_struts_action=%2Flanguage%2Fview&amp;_82_redirect=%2Fen%2Fcuerpo-de-gestion-de-la-administracion-civil-del-estado&amp;_82_languageId=ca_ES"
                 >Benvinguts</a
               >
@@ -496,7 +502,10 @@
               <a
                 xml:lang="gl"
                 lang="gl"
-                onclick="Liferay.Util.forcePost(this); return false;"
+                onclick="
+                  Liferay.Util.forcePost(this);
+                  return false;
+                "
                 href="https://www.inap.es/en/cuerpo-de-gestion-de-la-administracion-civil-del-estado?p_p_id=82&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=columna-1&amp;_82_struts_action=%2Flanguage%2Fview&amp;_82_redirect=%2Fen%2Fcuerpo-de-gestion-de-la-administracion-civil-del-estado&amp;_82_languageId=gl_ES"
                 >Benvidos</a
               >
@@ -505,7 +514,10 @@
               <a
                 xml:lang="eu"
                 lang="eu"
-                onclick="Liferay.Util.forcePost(this); return false;"
+                onclick="
+                  Liferay.Util.forcePost(this);
+                  return false;
+                "
                 href="https://www.inap.es/en/cuerpo-de-gestion-de-la-administracion-civil-del-estado?p_p_id=82&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=columna-1&amp;_82_struts_action=%2Flanguage%2Fview&amp;_82_redirect=%2Fen%2Fcuerpo-de-gestion-de-la-administracion-civil-del-estado&amp;_82_languageId=eu_ES"
                 >Ongi Etorri</a
               >
@@ -578,8 +590,16 @@
                 value="Buscar en INAP"
                 class="campoBuscar"
                 type="text"
-                onfocus="javascript:if(this.value=='Buscar en INAP'){this.value=''}"
-                onblur="javascript:if(this.value==''){this.value='Buscar en INAP'}"
+                onfocus="
+                  javascript: if (this.value == 'Buscar en INAP') {
+                    this.value = '';
+                  }
+                "
+                onblur="
+                  javascript: if (this.value == '') {
+                    this.value = 'Buscar en INAP';
+                  }
+                "
               />
               <label for="campoBusqueda">Buscar en el INAP</label>
             </form>
@@ -766,10 +786,31 @@
                           </li>
                         </ul>
 
-                      
                         <h2
                           style="
-                            font-family: 'Helvetica Neue', Helvetica, Arial,
+                            font-family:
+                              &quot;Helvetica Neue&quot;, Helvetica, Arial,
+                              sans-serif;
+                          "
+                        >
+                          Convocatoria 2025
+                        </h2>
+                        <ul>
+                          <li>
+                            <a href="https://sede.inap.gob.es/es/gacel-2025"
+                              >Ingreso libre.</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://sede.inap.gob.es/es/gacepi-2025"
+                              >Promoción interna.</a
+                            >
+                          </li>
+                        </ul>
+                        <h2
+                          style="
+                            font-family:
+                              &quot;Helvetica Neue&quot;, Helvetica, Arial,
                               sans-serif;
                           "
                         >
@@ -789,7 +830,8 @@
                         </ul>
                         <h2
                           style="
-                            font-family: 'Helvetica Neue', Helvetica, Arial,
+                            font-family:
+                              &quot;Helvetica Neue&quot;, Helvetica, Arial,
                               sans-serif;
                           "
                         >
@@ -817,7 +859,8 @@
                         </ul>
                         <h2
                           style="
-                            font-family: 'Helvetica Neue', Helvetica, Arial,
+                            font-family:
+                              &quot;Helvetica Neue&quot;, Helvetica, Arial,
                               sans-serif;
                           "
                         >
@@ -927,7 +970,7 @@
                               >Ingreso libre</a
                             >
                           </li>
-                            <li>
+                          <li>
                             <a
                               href="https://sede.inap.gob.es/gace-2014-ingreso-libre-para interinos"
                               target="_self"
@@ -1035,7 +1078,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGaceLprimerejercicio2008.pdf%2Fa9d892bb-126f-4f5d-3098-c8406f8181f2"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1058,7 +1104,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2Fplant_def_prim_ejer_gace_lib.pdf%2Fc1d11e06-48e0-1370-d285-63bc2f8ba672"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1082,7 +1131,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGACE%252520LI%2525202008%2525202%2525c2%2525ba%252520EJERC.pdf%2F6791ae20-1fff-3669-4ea3-390d72ae8a48"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1108,7 +1160,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FCUESTIONARIOGACEL_154AB89SD658.pdf%2Fbff957f5-9b89-f361-987f-c725593d0668"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1131,7 +1186,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FPlantilladefinitiva1erejercicioGACEL2009_154AB89SD658.pdf%2F2db6baac-cf53-787f-0aca-aa61560e12e7"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1155,7 +1213,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FCUESTIONARIOGACEL20092ejercicio_154AB89SD658.pdf%2Fdcf78550-ac79-05d0-c690-50ebc7966ad3"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1182,7 +1243,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGACE_2010_LI_CuestionarioGACEL1EJER2010.pdf%2F59efe830-91f6-fe18-1480-4194fa0ea31d"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1206,7 +1270,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGACE_2010_LI_GACELIDEFINITIVA.pdf%2F16b9c459-8cde-8f38-6727-61a8a7c50030"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1229,7 +1296,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGACE%252520LI%2525202010%2525202%2525c2%2525ba%252520EJERC.pdf%2Fe4e869e5-c1ca-2845-ee7d-dbfdac569ad9"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1252,7 +1322,10 @@
                               >tercer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2F2010%252520GACE%252520LI%2525203%2525c2%2525ba.pdf%2F611a4e39-e357-48e4-c0a2-e845dea9312e"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1279,7 +1352,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2Fexamen%252520gaceli2011.pdf%2F20ad35a4-2ca0-ea54-5311-6de0af00f87d"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1303,7 +1379,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FDefinitiva%252520GACELI%2525202011%252520primero.pdf%2F2e8f0ff2-12d0-8784-59a8-65fa8842616a"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1326,7 +1405,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGACE%252520LI%2525202011%2525202%2525c2%2525ba%252520EJERC.pdf%2F50b24ef0-106c-b43a-86f4-81b582071a3d"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1349,7 +1431,10 @@
                               >tercer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2F2011%252520GACE%252520LI%2525203%2525c2%2525ba.pdf%2Fe4cb52c0-c81d-4874-c2b6-31b4a2cae882"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1376,7 +1461,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FExamenGACE_L%2525202013.pdf%2F8991e672-b2a2-0467-1fa6-e1652c090ff5"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1400,7 +1488,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FPlantilla_definitiva%252520GACE-L%2525202013.pdf%2F04581773-beba-135d-a849-93deb4b4c856"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1423,7 +1514,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FSKMBT_C36017033108590.pdf%2F5cbdbc82-09ec-0c6b-bf55-83715d490d60"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1446,7 +1540,10 @@
                               >tercer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2F2013%252520GACE%252520LI%2525203%2525c2%2525ba.pdf%2F3126e4ad-4f40-062c-8fa6-862864bee0aa"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1475,7 +1572,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGacePIejercicio2008.pdf%2Fa119cedb-7ff0-789f-360e-7df09826f3f8"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1498,7 +1598,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGacePIplantilladerespuestas2008.pdf%2Fd519b759-73b8-5c37-e4aa-d224f53893a0"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1521,7 +1624,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGace%252520Pi%2525202%252520ejercicio%2525202008.pdf%2F44fcde00-18e9-92e6-5ab0-de716e0d0cae"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1548,7 +1654,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGACE%252520PI%2525202009%2525201%252520EJERC.pdf%2F76071d06-9c01-805e-bb27-8ac169570b48"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1572,7 +1681,10 @@
                               >Segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2F2009%252520GACE%252520PI%2525202%2525c2%2525ba.pdf%2Fd0ee1779-40aa-c7ff-9cbe-8302743c6204"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1599,7 +1711,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FCuestionarioGACEPI%2525202010.pdf%2F16ae7ea7-0259-a7df-cdc7-9a7f8171e1d1"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1623,7 +1738,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGACEPIDEFINITIVA2010.pdf%2F987f46ec-b652-7ebd-1a76-abdfe7df5986"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1646,7 +1764,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2F2010%252520GACE%252520PI%2525202%2525c2%2525ba.pdf%2F49a2996e-c973-0bd0-87b4-101fce673165"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1673,7 +1794,10 @@
                               >Primer ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FGACE-PI%2525202011cuestionario.pdf%2F1dc01904-8226-05b2-a247-5d485c174cdd"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1697,7 +1821,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FDefinitiva%252520GACEPI%2525202011%252520primero.pdf%2Fa396696a-1759-71fa-61e5-94fc0448a511"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1721,7 +1848,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2F2011%252520GACE%252520PI%2525202%2525c2%2525ba.pdf%2F5e616d68-970e-e5da-a64b-83edc21f477b"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1748,7 +1878,10 @@
                               >Primer ejercicio,</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FExamen%252520GACE_PI%2525202013.pdf%2Fbdfd36e8-d775-64a0-edfd-a89df279bc79"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1772,7 +1905,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FPlantilla_definitiva%252520GACE-PI%2525202013.pdf%2Fc3c0c103-131f-b459-dace-955a76237069"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1796,7 +1932,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2F2012-13%252520GACE%252520PI%2525202%2525c2%2525ba.pdf%2F4adee615-2cbc-723f-7749-75794a482e4e"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1823,7 +1962,10 @@
                               >Primer ejercicio,</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FExamen%252520GACE_PI%2525202013.pdf%2Fbdfd36e8-d775-64a0-edfd-a89df279bc79"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1847,7 +1989,10 @@
                               >plantilla de respuestas</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2FPlantilla_definitiva%252520GACE-PI%2525202013.pdf%2Fc3c0c103-131f-b459-dace-955a76237069"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -1871,7 +2016,10 @@
                               >segundo ejercicio</a
                             ><a
                               href="https://docreader.readspeaker.com/docreader/?cid=bwmgm&amp;lang=es_es&amp;url=https%3A%2F%2Fwww.inap.es%2Fdocuments%2F10136%2F1690899%2F2012-13%252520GACE%252520PI%2525202%2525c2%2525ba.pdf%2F4adee615-2cbc-723f-7749-75794a482e4e"
-                              onclick="window.open(this.href); return false;"
+                              onclick="
+                                window.open(this.href);
+                                return false;
+                              "
                               class="rspkr_dr_link"
                               target="_blank"
                               style="margin: 0px 0px 0px 3px"
@@ -2223,11 +2371,11 @@
         function (c) {
           var b = AUI();
           var e = Liferay.PortletURL.createURL(
-            "https://www.inap.es/en/cuerpo-de-gestion-de-la-administracion-civil-del-estado?p_p_id=2_WAR_kaleodesignerportlet&p_p_lifecycle=0"
+            "https://www.inap.es/en/cuerpo-de-gestion-de-la-administracion-civil-del-estado?p_p_id=2_WAR_kaleodesignerportlet&p_p_lifecycle=0",
           );
           e.setParameter(
             "mvcPath",
-            "/designer/edit_kaleo_draft_definition.jsp"
+            "/designer/edit_kaleo_draft_definition.jsp",
           );
           e.setParameter("availableFields", c.availableFields);
           e.setParameter("availablePropertyModels", c.availablePropertyModels);
@@ -2238,7 +2386,7 @@
           e.setParameter("openerWindowName", c.openerWindowName);
           e.setParameter(
             "portletResourceNamespace",
-            c.portletResourceNamespace
+            c.portletResourceNamespace,
           );
           e.setParameter("propertiesSaveCallback", c.propertiesSaveCallback);
           e.setParameter("refreshOpenerOnClose", c.refreshOpenerOnClose);
@@ -2262,7 +2410,7 @@
           }
           Liferay.Util.openWindow(c);
         },
-        ["liferay-portlet-url"]
+        ["liferay-portlet-url"],
       );
       Liferay.Portlet.register("1_WAR_kaleodesignerportlet");
       Liferay.Portlet.onLoad({
@@ -2316,7 +2464,7 @@
               warningLength: 0,
             });
           })();
-        }
+        },
       );
     </script>
     <script
